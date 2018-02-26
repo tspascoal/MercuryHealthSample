@@ -1,0 +1,88 @@
+﻿@model IEnumerable<MercuryHealth.Models.FoodLogEntry>
+
+@{
+    ViewBag.Title = "Nutrition";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", "FoodLogEntries", null, new { id = "CreateNew" })
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MealTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tags)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Calories)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProteinInGrams)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FatInGrams)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarbohydratesInGrams)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SodiumInGrams)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MealTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tags)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Calories)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProteinInGrams)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FatInGrams)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarbohydratesInGrams)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SodiumInGrams)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>*@
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

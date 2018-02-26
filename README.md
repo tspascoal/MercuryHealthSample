@@ -1,20 +1,27 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+
+Sample code for Mercury Health.
+
+Mercury Health is a ASP.Net MVC application to track health habits and uses MS Sql Server as the database backend.
+The solution has code and automated tests (unit, UI and load tests)
+
+The solution has the following projects
+
+* **MercuryHealth.Web** The web application
+* **MercuryHealth.Sql** [database project](https://www.visualstudio.com/vs/ssdt/) used to maintain and deploy the database.
+* **MercuryHealth.Models** The models used in the web project
+* **MercuryHealth.UnitTests** 
+* **MercuryHealth.AutomatedTest** Automated UI tests using selenium (can run tests in IE, Chrome, Firefox, Edge, chrome less Chrome and chrome less FireFox )
+* **MercuryHealth.Web.PerfTests**
+* **MercuryHealth.LoadTests** 
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+1. Open the solution file using Visual Studio
+1. Build
+1. Run Unit Tests
+1. Deploy Database
+1. Run application
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Some unit tests require Visual Studio Enterprise since they use [Microsoft Fakes](https://msdn.microsoft.com/en-us/library/hh549175.aspx) framework
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)

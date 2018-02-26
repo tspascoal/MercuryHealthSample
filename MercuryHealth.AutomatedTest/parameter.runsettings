@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="appUrl" value="" />
+    <Parameter name="browserType" value="" />	
+    <Parameter name="browserExeLocation" value="" />
+  </TestRunParameters>
+</RunSettings>
