@@ -11,9 +11,9 @@ The solution has the following projects
 * **MercuryHealth.Sql** [database project](https://www.visualstudio.com/vs/ssdt/) used to maintain and deploy the database.
 * **MercuryHealth.Models** The models used in the web project
 * **MercuryHealth.UnitTests** 
-* **MercuryHealth.AutomatedTest** Automated UI tests using selenium (can run tests in IE, Chrome, Firefox, Edge, chrome less Chrome and chrome less FireFox )
-* **MercuryHealth.Web.PerfTests**
-* **MercuryHealth.LoadTests** 
+* **MercuryHealth.AutomatedTest** Automated UI tests using selenium (can run tests in IE, Chrome, Firefox, Edge, chrome less Chrome and chrome less FireFox)
+* **MercuryHealth.Web.PerfTests** Web Tests that can be used to test the app or for load testing purposes
+* **MercuryHealth.LoadTests** Load test the application either on premise or in the cloud.
 
 # Getting Started
 
