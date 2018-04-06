@@ -16,18 +16,12 @@ namespace MercuryHealth.Web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             // Database.SetInitializer(new DropCreateDatabaseIfModelChanges<ApplicationDbContext>());
 
             Database.SetInitializer<ApplicationDbContext>(null);
-
-            // Application Insights - Track Telemetry by version
-            //TelemetryConfiguration.Active.ContextInitializers.Add(new Helper.VersionTelemetry());
-            //TelemetryConfiguration.Active.TelemetryInitializers.Add(new Helper.TelemetryStartUp());
-
         }
     }
 }

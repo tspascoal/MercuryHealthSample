@@ -119,9 +119,6 @@
     <None Include="app.config" />
     <Fakes Include="Fakes\MercuryHealth.Web.fakes" />
     <Fakes Include="Fakes\System.Web.Mvc.fakes" />
-    <None Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <Fakes Include="Fakes\System.fakes" />
     <Fakes Include="Fakes\mscorlib.fakes" />
     <None Include="packages.config" />
